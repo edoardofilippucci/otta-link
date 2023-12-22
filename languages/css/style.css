@@ -17,10 +17,11 @@ body {
 }
 
 :root {
-  --primary-color: #5c16c5;
+  --twitch-color: #a970ff;
+  --instagram-color: #a970ff;
   --white-color: #efeee5;
   --black-color: #274546;
-  --verified-color: #336aff;
+  --verified-color: #5482ff;
 }
 
 .colored-text {
@@ -44,8 +45,7 @@ body {
     background-color: var(--black-color);
     color: var(--white-color);
     width: 100vw;
-    min-height: 100vh;
-    height: auto;
+    max-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -87,7 +87,7 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 45px;
-    border: 3px solid var(--primary-color);
+    border: 3px solid var(--verified-color);
     background: var(--black-color);
   }
 
@@ -109,7 +109,7 @@ body {
   }
   .link-container {
     width: 90%;
-    height: auto;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,6 +151,22 @@ body {
   }
   .link-box i {
     font-size: 35px;
+  }
+  .fa-twitch {
+    color: var(--twitch-color);
+  }
+  .fa-instagram {
+    background: linear-gradient(
+      45deg,
+      #ffde85 0%,
+      #f7792a 30%,
+      #f7504f 40%,
+      #d82b81 60%,
+      #d82b81 75%,
+      #9536c2 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .link-box p {
     font-size: 25px;
