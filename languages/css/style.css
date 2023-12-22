@@ -130,6 +130,21 @@ body {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
+    animation: shake 2s infinite;
+  }
+  @keyframes shake {
+    10% {
+      transform: scale(1.05) rotate(5deg);
+    }
+    20% {
+      transform: scale(1.05) rotate(-5deg);
+    }
+    30% {
+      transform: scale(1.05) rotate(5deg);
+    }
+    40% {
+      transform: none;
+    }
   }
   .box2 {
     display: flex;
@@ -170,5 +185,18 @@ body {
   }
   .link-box p {
     font-size: 25px;
+  }
+  footer {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer p {
+    font-size: 15px;
+    color: var(--white-color);
   }
 }
